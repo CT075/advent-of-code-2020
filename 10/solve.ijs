@@ -49,8 +49,6 @@ part_one_tacit =: 3 : '*/ 1 &+ +/ " 1 = 2 ({: - {.) \ /:~ /:~ readtable < y'
 
 trib =: 3 : '{. ((1 & }. , +/) ^: y) 1 1 2'
 
-((1 & } , +/) ^: y) 1 1 2
-
 part_two =: 3 : 0
   data =. readtable y
   sorted =. /:~ data
