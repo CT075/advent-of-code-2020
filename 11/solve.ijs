@@ -59,14 +59,9 @@ angles =: (, (<"1 @: (_1 _1 *"1 >))) (<1 0),(<0 1),(<1 1),(<1 _1)
 NB. From here, I wasn't able to figure out how to bend J to my will enough to
 NB. accomplish what I wanted to do.
 NB.
-NB. The core concept was that, given a vector (v) consisting of exactly the
-NB. occupancy status (as 0 or 1) in a given line of sight in a particular
-NB. direction from a seat, the number of visible, occupied seats is exactly
-NB. equal to the binary OR folded over that vector -- that is, (+. / v).
-NB.
-NB. The struggle came in actually building such vectors for each seat. My
+NB. The struggle came in building line-of-sight vectors for each seat. My
 NB. initial plan was to do it by constructing a table of each seat coordinate,
-NB. then using the angles above to draw rays out in all 8 directions, but that
+NB. then using [angles] above to draw rays out in all 8 directions, but that
 NB. became pretty painful pretty quickly and I wasn't particularly having fun
 NB. anymore.
 
