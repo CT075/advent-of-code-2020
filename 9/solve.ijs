@@ -52,8 +52,8 @@ solve_one =: (|:@:((1+pre 0)&((-.@:ck)\)))#((pre 0)&}.)
 
 NB. This solution doesn't actually work, because for some godforsaken reason
 NB. it insists that (bad = sums) is a length error, regardless of how much I
-NB. insist that (bad) is a scalar. However, pasting these lines into the REPL
-NB. gives the right answer, so whatever.
+NB. insist that (bad) is a scalar. However, pasting and inlining the lines and
+NB. results into the REPL gives the right answer, so whatever.
 solve_two_expanded =: 3 : 0
   data =. readtable < y
   bad =. solve_one data
